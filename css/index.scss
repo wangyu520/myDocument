@@ -1,0 +1,267 @@
+@function rem($px) {
+    @return $px / 37.5px * 1rem
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .header {
+        width: 100%;
+        height: rem(45px);
+        background: #1f82d2;
+        display: flex;
+    }
+    .main {
+        flex: 1;
+        overflow: auto;
+        .content {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .footer {
+        width: 100%;
+        height: rem(45px);
+        background: #ccc;
+    }
+}
+
+.header-b {
+    width: rem(66px);
+    height: rem(42px);
+    text-align: center;
+    line-height: rem(42px);
+    font-size: rem(15px);
+    color: #fff;
+}
+
+.header-input {
+    flex: 1;
+    width: rem(200px);
+    height: rem(22px);
+    margin-top: rem(11px);
+    border-radius: rem(10px);
+}
+
+.header-p {
+    width: rem(66px);
+    height: rem(42px);
+    text-align: center;
+    line-height: rem(42px);
+    font-size: rem(15px);
+    color: #fff;
+    .icon-gengduo1 {
+        font-size: rem(18px);
+    }
+    .icon-user {
+        font-size: rem(22px);
+    }
+}
+
+.icon {
+    font-size: rem(30px);
+}
+
+.content-top {
+    width: 100%;
+    height: rem(137px);
+    ul {
+        width: 100%;
+        height: rem(150px);
+        display: flex;
+        flex-wrap: wrap;
+        li {
+            width: 24%;
+            height: rem(70px);
+            text-align: center;
+            margin-top: rem(5px);
+        }
+    }
+}
+
+.content-jifen {
+    width: 100%;
+    height: rem(70px);
+    // background: red;
+    margin-top: rem(30px);
+    ul {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        li {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            div {
+                width: 50%;
+                height: 100%;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+            }
+            p {
+                text-align: center;
+                margin-top: rem(10px);
+            }
+        }
+    }
+}
+
+.content-waimai {
+    width: 100%;
+    height: rem(180px);
+    p {
+        width: 100%;
+        height: rem(35px);
+        font-size: rem(20px);
+    }
+    ul {
+        width: 100%;
+        height: rem(125px);
+        display: flex;
+        justify-content: space-around;
+        li {
+            width: 30%;
+            height: 100%;
+        }
+        li:nth-child(1) {
+            img {
+                width: 90%;
+                height: 100%;
+            }
+        }
+        li:nth-child(2) {
+            img {
+                width: 100%;
+                height: rem(81px);
+            }
+            .yp {
+                width: 100%;
+                height: rem(15px);
+                font-size: rem(14px);
+            }
+            .qian {
+                font-size: rem(16px);
+                color: red;
+                // margin-bottom: rem(20px);
+            }
+        }
+        li:nth-child(3) {
+            img {
+                width: 100%;
+                height: rem(81px);
+            }
+            .yp {
+                width: 100%;
+                height: rem(15px);
+                font-size: rem(14px);
+            }
+            .qian {
+                font-size: rem(16px);
+                color: red;
+                // margin-bottom: rem(20px);
+            }
+        }
+    }
+}
+
+.content-kdj {
+    width: 100%;
+    height: rem(88px);
+    ul {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        li {
+            width: 50%;
+            height: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+            .kdj {
+                width: 100%;
+                height: 30%;
+                font-size: rem(16px);
+            }
+        }
+    }
+}
+
+.span {
+    font-size: rem(15px);
+    color: #ccc;
+    margin-top: rem(20px);
+}
+
+.content-qianggo {
+    width: 100%;
+    height: rem(170px);
+    // background: red;
+    div {
+        width: 100%;
+        height: rem(45px);
+        display: flex;
+        .span1 {
+            width: rem(300px);
+            font-size: rem(20px);
+            line-height: rem(45px);
+        }
+        .span2 {
+            font-size: rem(15px);
+            text-align: center;
+            line-height: rem(45px);
+        }
+    }
+    ul {
+        width: 100%;
+        height: rem(124px);
+        display: flex;
+        li {
+            width: 33%;
+            height: rem(124px);
+            img {
+                width: 100%;
+                height: rem(85px);
+            }
+        }
+    }
+}
+
+.footer-ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    li {
+        width: 25%;
+        height: 100%;
+        p {
+            width: 100%;
+            height: rem(20px);
+            text-align: center;
+            line-height: rem(20px);
+        }
+        .tubiao1 {
+            width: rem(25px);
+            height: rem(25px);
+            margin-left: rem(32px);
+        }
+    }
+}
